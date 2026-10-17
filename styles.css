@@ -1067,3 +1067,66 @@ article.page-content figure.intro-image-wrap {
     border-radius: 3px;
   }
 }
+
+
+/* Final shared navigation refinements for Parts, Chapters, and Study Rooms */
+.chapter-navigation {
+  box-sizing: border-box;
+  width: min(calc(100% - 3rem), 1040px);
+  margin: clamp(1.75rem, 4vw, 3rem) auto 1.5rem;
+  column-gap: clamp(.75rem, 2vw, 1.5rem);
+}
+.chapter-nav-side {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+.chapter-nav-side:last-child { justify-content: flex-end; text-align: right; }
+.chapter-nav-link {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  text-wrap: pretty;
+}
+.chapter-nav-part {
+  box-sizing: border-box;
+  min-width: 9rem;
+  max-width: 13rem;
+  padding: .7rem 1rem;
+  gap: .35rem;
+  white-space: normal;
+}
+.chapter-nav-kicker {
+  display: block;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+.chapter-nav-part strong {
+  display: block;
+  overflow-wrap: anywhere;
+}
+@media (min-width: 621px) and (max-width: 1024px) {
+  .chapter-navigation {
+    grid-template-columns: minmax(0, 1fr) minmax(9rem, auto) minmax(0, 1fr);
+    gap: .75rem;
+    width: calc(100% - 2.5rem);
+  }
+  .chapter-nav-link { font-size: clamp(.9rem, 1.8vw, 1.05rem); }
+  .chapter-nav-part { min-width: 9rem; padding: .7rem .8rem; }
+}
+@media (max-width: 620px) {
+  .chapter-navigation {
+    width: calc(100% - 2rem);
+    margin: 1.75rem auto 1.25rem;
+    padding: .9rem 0;
+    row-gap: .65rem;
+  }
+  .chapter-nav-part {
+    min-width: 9.5rem;
+    max-width: min(100%, 14rem);
+    padding: .65rem .9rem;
+  }
+  .chapter-nav-link {
+    font-size: .88rem;
+    line-height: 1.35;
+  }
+}
