@@ -637,3 +637,40 @@ article.page-content figure.intro-image-wrap {
 @media (max-width: 600px) {
   .chapter-study-overview { margin: 1.5rem 1rem; }
 }
+
+
+/* Separate companion study room pages */
+.study-room { max-width: 900px; }
+.study-room .study-intro {
+  padding: 1rem 1.2rem;
+  border-left: 4px solid #c9a85d;
+  background: rgba(201,168,93,.1);
+}
+.study-room .study-panel {
+  margin: 1.5rem 0;
+  padding: clamp(1rem, 3vw, 1.6rem);
+  background: #f8f0e3;
+  border: 1px solid rgba(190,151,75,.4);
+  border-radius: 5px;
+  color: #38252a;
+}
+.study-room .study-panel h2 { color: #64182f; margin-top: 0; }
+.study-room textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: .6rem 0 1.25rem;
+  padding: .8rem;
+  min-height: 100px;
+  border: 1px solid #c7b59b;
+  border-radius: 4px;
+  background: #fffdf8;
+  color: #2d2424;
+  font: inherit;
+}
+.study-room-links li { margin: .55rem 0; }
+.study-room-links a { color: #64182f; font-weight: 600; }
+.study-note { font-size: .88rem; color: var(--muted); margin-top: 1rem; }
+@media (max-width: 600px) {
+  .study-room .study-panel { margin: 1rem 0; }
+}
