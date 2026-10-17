@@ -399,3 +399,32 @@ a, button { touch-action: manipulation; }
     margin: .5rem auto 1.5rem;
   }
 }
+
+
+/* Consistent full-width centering for all page hero headings */
+.hero,
+.page-hero {
+  width: 100%;
+  text-align: center;
+}
+.hero .eyebrow,
+.page-hero .eyebrow,
+.hero h1,
+.page-hero h1,
+.hero .subtitle,
+.page-hero .subtitle,
+.hero .hero-copy,
+.page-hero > p {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.hero h1,
+.page-hero h1 {
+  display: block;
+}
+.page-hero > p:not(.eyebrow):not(.subtitle) {
+  max-width: 900px;
+}
