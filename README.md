@@ -73,13 +73,11 @@ To preview the website locally, download or clone this repository and open `inde
 
 ## Publishing with GitHub Pages
 
-The repository contains the website source files. **Public deployment has not yet been verified.** To publish through GitHub Pages, open the repository settings and select **Pages**. Configure deployment from the `main` branch and the repository root (`/(root)`), then save. After GitHub finishes publishing, verify the provided Pages URL and test navigation on desktop and mobile.
-
-Expected Pages address, once enabled and successfully published:
+The website is now published through GitHub Pages at:
 
 https://brad-hobbswd.github.io/beyond-the-veil/
 
-Do not treat the expected address as proof that the website is currently live.
+The source files are maintained in this repository. After any future updates, allow GitHub Pages time to deploy the changes, then test the published pages and navigation on desktop and mobile. If deployment settings need to be reviewed, open the repository settings and select **Pages** to confirm the `main` branch and repository root (`/(root)`) are selected.
 
 ## Search Engine Discovery
 
