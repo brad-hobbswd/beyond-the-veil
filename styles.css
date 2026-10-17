@@ -918,3 +918,74 @@ article.page-content figure.intro-image-wrap {
   .study-room-links a.study-room-button { transition: none; }
   .study-room-links a.study-room-button:hover { transform: none; }
 }
+
+
+/* Consistent chapter navigation connecting chapters back to their Parts */
+.chapter-navigation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem;
+  width: min(100% - 2rem, 900px);
+  margin: clamp(2rem, 5vw, 3.25rem) auto 1.25rem;
+  padding: 1.1rem 0;
+  border-top: 1px solid rgba(190, 151, 75, .55);
+  border-bottom: 1px solid rgba(190, 151, 75, .55);
+}
+.chapter-nav-side { min-width: 0; }
+.chapter-nav-side:last-child { text-align: right; }
+.chapter-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  min-height: 44px;
+  color: #64182f;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+.chapter-nav-link:hover { text-decoration: underline; }
+.chapter-nav-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .2rem;
+  min-width: 7.5rem;
+  padding: .65rem 1rem;
+  border: 1px solid rgba(190, 151, 75, .65);
+  border-radius: 5px;
+  background: #fbf5eb;
+  color: #64182f;
+  text-align: center;
+  text-decoration: none;
+}
+.chapter-nav-part:hover { background: #f3e6d3; border-color: #9b7936; }
+.chapter-nav-kicker {
+  color: #8a6a2d;
+  font-size: .66rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+.chapter-nav-part strong { font-size: .95rem; line-height: 1.3; }
+.chapter-navigation a:focus-visible {
+  outline: 3px solid #c9a85d;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+@media (max-width: 620px) {
+  .chapter-navigation {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: .75rem;
+    width: calc(100% - 2rem);
+  }
+  .chapter-nav-part {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    justify-self: center;
+  }
+  .chapter-nav-side { grid-row: 2; }
+  .chapter-nav-side:last-child { text-align: right; }
+  .chapter-nav-link { font-size: .9rem; }
+}
