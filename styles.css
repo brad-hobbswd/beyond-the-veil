@@ -218,3 +218,47 @@ a, button { touch-action: manipulation; }
   .toc-part h2 a { display: block; }
   .toc-part h2 span { display: block; margin-top: .15rem; font-size: 1rem; }
 }
+
+
+/* Consistent previous, contents, and next links for chapter reading */
+.chapter-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .75rem 1.25rem;
+  max-width: 850px;
+  margin: 0 auto 3rem;
+  padding: 1.25rem;
+  border-top: 1px solid rgba(216,183,106,.65);
+  border-bottom: 1px solid rgba(216,183,106,.65);
+}
+.chapter-navigation a {
+  display: inline-block;
+  padding: .45rem 0;
+  color: var(--burgundy);
+  font-weight: 600;
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+.chapter-navigation a:hover,
+.chapter-navigation a:focus-visible {
+  color: #8a5a13;
+  text-decoration: underline;
+}
+.site-header nav a[aria-current="page"] {
+  color: var(--gold-light);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: .45rem;
+}
+@media (max-width: 480px) {
+  .chapter-navigation {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .35rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  .chapter-navigation a { padding: .35rem 0; }
+}
