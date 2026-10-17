@@ -262,3 +262,90 @@ a, button { touch-action: manipulation; }
   }
   .chapter-navigation a { padding: .35rem 0; }
 }
+
+
+/* Primary navigation: desktop links and an accessible mobile menu */
+.site-header {
+  position: relative;
+  z-index: 20;
+}
+.site-header .menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  min-height: 44px;
+  padding: .65rem 1rem;
+  border: 1px solid var(--gold);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--cream);
+  font: 600 .95rem/1.2 Arial, sans-serif;
+  cursor: pointer;
+}
+.site-header .menu-icon {
+  color: var(--gold-light);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+.site-header .site-nav {
+  display: flex;
+  align-items: center;
+  gap: .55rem 1.2rem;
+}
+.site-header .site-nav a {
+  padding: .45rem .15rem;
+  text-decoration: none;
+  text-underline-offset: .4rem;
+}
+.site-header .site-nav a[aria-current="page"] {
+  color: var(--gold-light);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 2px;
+}
+.site-header .site-nav a:hover,
+.site-header .site-nav a:focus-visible {
+  color: var(--gold-light);
+}
+@media (max-width: 768px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: .85rem 1rem;
+  }
+  .site-header .menu-toggle {
+    display: inline-flex;
+    justify-self: end;
+  }
+  .site-header .site-nav {
+    display: none;
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: .65rem 0 .25rem;
+    border-top: 1px solid rgba(216,183,106,.35);
+    gap: .25rem;
+  }
+  .site-header.nav-open .site-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .site-header .site-nav a {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: .7rem .85rem;
+    border-radius: 2px;
+    font-size: 1rem;
+  }
+  .site-header .site-nav a[aria-current="page"] {
+    background: rgba(216,183,106,.12);
+  }
+}
+@media (max-width: 380px) {
+  .site-header { padding: .9rem .85rem; }
+  .site-header .brand { max-width: 190px; font-size: 1.08rem; }
+  .site-header .menu-toggle { padding: .6rem .7rem; }
+}
