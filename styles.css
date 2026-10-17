@@ -769,3 +769,70 @@ article.page-content figure.intro-image-wrap {
   .part-introduction { margin-bottom: 2rem; }
   .part-chapters, .part-scripture { margin: 2rem 0; }
 }
+
+
+/* Consistent end-of-chapter Study Room callout */
+.study-room-links {
+  box-sizing: border-box;
+  width: min(100% - 2rem, 900px);
+  margin: clamp(2rem, 5vw, 3.5rem) auto 2rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background: #f8f0e3;
+  border: 1px solid rgba(190, 151, 75, .55);
+  border-left: 5px solid #c9a85d;
+  border-radius: 5px;
+  color: #38252a;
+}
+.study-room-links h2 {
+  margin: 0 0 .65rem;
+  color: #64182f;
+  font-size: clamp(1.25rem, 2.4vw, 1.65rem);
+  line-height: 1.3;
+}
+.study-room-links p {
+  margin: 0 0 1rem;
+  max-width: 42rem;
+  line-height: 1.7;
+}
+.study-room-links p:last-child { margin-bottom: 0; }
+.study-room-links a.text-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: .7rem 1rem;
+  background: #64182f;
+  border: 1px solid #64182f;
+  border-radius: 4px;
+  color: #fffaf2;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.35;
+  transition: background-color .18s ease, border-color .18s ease;
+}
+.study-room-links a.text-link:hover,
+.study-room-links a.text-link:focus-visible {
+  background: #481020;
+  border-color: #c9a85d;
+  color: #fffaf2;
+}
+.study-room-links a.text-link:focus-visible {
+  outline: 3px solid #c9a85d;
+  outline-offset: 3px;
+}
+@media (max-width: 600px) {
+  .study-room-links {
+    width: calc(100% - 2rem);
+    margin: 1.75rem auto;
+    padding: 1.1rem;
+  }
+  .study-room-links a.text-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .study-room-links a.text-link { transition: none; }
+}
