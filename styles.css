@@ -92,3 +92,9 @@ footer{line-height:1.6}
  .chapter-grid article{transition:none}
  .chapter-grid article:hover{transform:none}
 }
+
+
+/* Featured book cover */
+.book-cover-feature { max-width: 360px; margin: 1.5rem auto 2.5rem; text-align: center; }
+.book-cover-feature img { display: block; width: 100%; height: auto; border: 1px solid #D8B76A; box-shadow: 0 12px 32px rgba(0,0,0,.28); }
+.book-cover-feature figcaption { margin-top: .75rem; color: #D8B76A; font-size: .95rem; }
