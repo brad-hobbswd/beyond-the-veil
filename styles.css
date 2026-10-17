@@ -592,3 +592,48 @@ article.page-content figure.intro-image-wrap {
     max-width: 44% !important;
   }
 }
+
+
+/* Companion classroom overview on each Part page */
+.chapter-study-overview {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+  background: #f5ead7;
+  border: 1px solid rgba(190, 151, 75, .45);
+  border-top: 4px solid #c9a85d;
+  border-radius: 4px;
+  color: var(--ink);
+}
+.chapter-study-overview .eyebrow {
+  color: #9b7936;
+  letter-spacing: .14em;
+  font-size: .78rem;
+  font-weight: 700;
+}
+.chapter-study-overview h2 {
+  color: var(--burgundy);
+  margin-top: .35rem;
+}
+.chapter-study-overview h3 {
+  color: var(--burgundy);
+  margin: 1.35rem 0 .5rem;
+}
+.chapter-study-overview ul {
+  padding-left: 1.35rem;
+}
+.chapter-study-overview li {
+  margin: .5rem 0;
+}
+.chapter-study-overview a {
+  color: var(--burgundy);
+  text-underline-offset: 3px;
+}
+.chapter-study-overview .study-note {
+  border-top: 1px solid rgba(190,151,75,.45);
+  padding-top: .8rem;
+  font-size: .88rem;
+}
+@media (max-width: 600px) {
+  .chapter-study-overview { margin: 1.5rem 1rem; }
+}
