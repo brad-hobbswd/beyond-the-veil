@@ -1130,3 +1130,37 @@ article.page-content figure.intro-image-wrap {
     line-height: 1.35;
   }
 }
+
+
+/* Study Room navigation: keep the return label and destination visually separate */
+.chapter-navigation.study-room-navigation .chapter-nav-part {
+  min-width: 10rem;
+  padding: .8rem 1rem;
+  gap: .45rem;
+}
+.chapter-navigation.study-room-navigation .chapter-nav-kicker {
+  display: block;
+  margin-bottom: .15rem;
+  line-height: 1.4;
+}
+.chapter-navigation.study-room-navigation .chapter-nav-part strong {
+  display: block;
+  margin-top: .1rem;
+  line-height: 1.35;
+}
+@media (min-width: 621px) and (max-width: 1024px) {
+  .chapter-navigation.study-room-navigation {
+    grid-template-columns: minmax(0, 1fr) minmax(10rem, auto) minmax(0, 1fr);
+  }
+  .chapter-navigation.study-room-navigation .chapter-nav-part {
+    min-width: 10rem;
+    padding: .8rem .9rem;
+  }
+}
+@media (max-width: 620px) {
+  .chapter-navigation.study-room-navigation .chapter-nav-part {
+    min-width: 10rem;
+    max-width: min(100%, 14rem);
+    padding: .75rem 1rem;
+  }
+}
