@@ -1034,3 +1034,36 @@ article.page-content figure.intro-image-wrap {
     align-items: center;
   }
 }
+
+
+/* Mobile menu overlays the page instead of changing header height */
+@media (max-width: 900px) {
+  .site-header { position: relative; }
+  .site-header .site-nav,
+  .site-header.nav-open .site-nav {
+    position: absolute;
+    top: calc(100% + .35rem);
+    right: 1rem;
+    left: auto;
+    z-index: 1000;
+    box-sizing: border-box;
+    width: min(90vw, 340px);
+    max-height: min(75vh, 560px);
+    overflow-y: auto;
+    padding: .65rem;
+    border: 1px solid rgba(216,183,106,.65);
+    border-radius: 6px;
+    background: #1b080e;
+    box-shadow: 0 14px 34px rgba(0,0,0,.35);
+  }
+  .site-header.nav-open .site-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .site-header .site-nav a {
+    min-height: 44px;
+    padding: .7rem .8rem;
+    border-radius: 3px;
+  }
+}
