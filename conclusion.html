@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header"><a class="brand" href="index.html">Beyond the Veil<span>Bradley Hobbs</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about-book.html">About the Book</a><a href="table-of-contents.html">Contents</a><a href="about-author.html">About the Author</a><a href="resources.html">Resources</a></nav></header>
+<header class="site-header"><a class="brand" href="index.html">Beyond the Veil<span>Bradley Hobbs</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-icon" aria-hidden="true">☰</span><span class="menu-label">Menu</span></button><nav class="site-nav" id="primary-navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="about-book.html">About the Book</a><a href="table-of-contents.html">Contents</a><a href="about-author.html">About the Author</a><a href="resources.html">Resources</a></nav></header>
 <main>
 <section class="page-hero"><p class="eyebrow">BEYOND THE VEIL</p><h1>Conclusion</h1><p class="subtitle">Living in the Light of Truth</p><p class="byline">By Bradley Hobbs</p></section>
 <article class="page-content">
@@ -70,5 +70,8 @@
 </article>
 </main>
 <footer><p>© 2026 Bradley Hobbs. All rights reserved.</p><div><a href="copyright.html">Copyright</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></footer>
+<script>
+(function(){const h=document.querySelector('.site-header'),b=h&&h.querySelector('.menu-toggle'),n=h&&h.querySelector('.site-nav');if(!b||!n)return;function close(){h.classList.remove('nav-open');b.setAttribute('aria-expanded','false');b.querySelector('.menu-label').textContent='Menu';b.querySelector('.menu-icon').textContent='☰';}b.addEventListener('click',function(){const o=h.classList.toggle('nav-open');b.setAttribute('aria-expanded',String(o));b.querySelector('.menu-label').textContent=o?'Close':'Menu';b.querySelector('.menu-icon').textContent=o?'×':'☰';});n.addEventListener('click',function(e){if(e.target.closest('a'))close();});document.addEventListener('keydown',function(e){if(e.key==='Escape'){close();b.focus();}});})();
+</script>
 </body>
 </html>
