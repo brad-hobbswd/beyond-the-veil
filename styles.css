@@ -565,3 +565,30 @@ article.page-content figure.intro-image-wrap {
     white-space: nowrap;
   }
 }
+
+
+/* Introduction image sizes tuned separately for desktop, iPad portrait, and phones */
+@media (min-width: 1100px) {
+  article.page-content figure.intro-image-wrap {
+    width: 300px !important;
+    max-width: 38% !important;
+  }
+}
+@media (min-width: 701px) and (max-width: 1099px) {
+  article.page-content figure.intro-image-wrap {
+    width: 260px !important;
+    max-width: 39% !important;
+  }
+}
+@media (max-width: 700px) {
+  article.page-content figure.intro-image-wrap {
+    width: 195px !important;
+    max-width: 41% !important;
+  }
+}
+@media (max-width: 420px) {
+  article.page-content figure.intro-image-wrap {
+    width: 155px !important;
+    max-width: 44% !important;
+  }
+}
