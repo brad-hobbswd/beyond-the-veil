@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header"><a class="brand" href="index.html">Beyond the Veil<span>Bradley Hobbs</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about-book.html">About the Book</a><a href="table-of-contents.html">Contents</a><a href="about-author.html">About the Author</a><a href="resources.html">Resources</a></nav></header>
+<header class="site-header"><a class="brand" href="index.html">Beyond the Veil<span>Bradley Hobbs</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-icon" aria-hidden="true">☰</span><span class="menu-label">Menu</span></button><nav class="site-nav" id="primary-navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="about-book.html">About the Book</a><a href="table-of-contents.html">Contents</a><a href="about-author.html">About the Author</a><a href="resources.html">Resources</a></nav></header>
 <main>
 <section class="page-hero"><p class="eyebrow">BEYOND THE VEIL · CHAPTER 4</p><h1>The Test of Authority</h1><p class="subtitle">Revealing the Truth About Authority, Obedience, and the Heart</p><p>By Bradley Hobbs</p></section>
 <article class="page-content">
@@ -132,5 +132,15 @@
 </article>
 </main>
 <footer><p>© 2026 Bradley Hobbs. All rights reserved.</p><div><a href="copyright.html">Copyright</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></footer>
+<script>
+(function () {
+ const header=document.querySelector('.site-header'), toggle=header&&header.querySelector('.menu-toggle'), nav=header&&header.querySelector('.site-nav');
+ if(!toggle||!nav)return;
+ function closeMenu(){header.classList.remove('nav-open');toggle.setAttribute('aria-expanded','false');toggle.querySelector('.menu-label').textContent='Menu';toggle.querySelector('.menu-icon').textContent='☰';}
+ toggle.addEventListener('click',function(){const open=header.classList.toggle('nav-open');toggle.setAttribute('aria-expanded',String(open));toggle.querySelector('.menu-label').textContent=open?'Close':'Menu';toggle.querySelector('.menu-icon').textContent=open?'×':'☰';});
+ nav.addEventListener('click',function(e){if(e.target.closest('a'))closeMenu();});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeMenu();toggle.focus();}});
+})();
+</script>
 </body>
 </html>
