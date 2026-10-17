@@ -1,2 +1,31 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Terms of Use | Beyond the Veil</title><meta name="description" content="Terms of use for the Beyond the Veil website by Bradley Hobbs."><link rel="canonical" href="https://brad-hobbswd.github.io/beyond-the-veil/terms.html"><link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><a class="brand" href="index.html">Beyond the Veil<span>Bradley Hobbs</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#book">The Book</a><a href="index.html#contents">Contents</a><a href="about-author.html">About the Author</a><a href="resources.html">Resources</a></nav></header><main><section class="page-hero"><h1>Terms of Use</h1></section><article class="page-content"><p><strong>Last updated: October 2026</strong></p><h2>Purpose of this website</h2><p>This website provides general information about <em>Beyond the Veil</em> and related Christian teaching materials. Content is offered for personal reflection, reading, and discussion.</p><h2>Educational and spiritual content</h2><p>Content on this website expresses the author's perspective and is not a substitute for individualized legal, medical, mental health, or other professional advice. Readers should seek qualified assistance for personal situations that require it.</p><h2>Acceptable use</h2><p>You may browse this website and share links to its pages. You agree not to misuse the site, attempt to disrupt its availability, or present the author's work as your own. Use of original content is subject to the copyright notice and applicable law.</p><h2>External links</h2><p>Links to other websites are provided for convenience or further reading. We do not control and are not responsible for external websites, their content, or their policies.</p><h2>Changes and availability</h2><p>Content may be revised or removed as the website develops. We cannot guarantee uninterrupted availability or that every page will remain unchanged.</p><h2>Contact and legal notice</h2><p>Contact details may be added to this page when a public contact method is established. These terms are general information and are not legal advice.</p></article></main><footer><p>© 2026 Bradley Hobbs. All rights reserved.</p><div><a href="copyright.html">Copyright</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></footer></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Terms of Use | Beyond the Veil</title><meta name="description" content="Terms of use for the Beyond the Veil website by Bradley Hobbs."><link rel="canonical" href="https://brad-hobbswd.github.io/beyond-the-veil/terms.html"><link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><a class="brand" href="index.html">Beyond the Veil<span>Bradley Hobbs</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-label">Menu</span><span class="menu-icon" aria-hidden="true">☰</span></button><nav class="site-nav" id="primary-navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="about-book.html">About the Book</a><a href="table-of-contents.html">Contents</a><a href="about-author.html">About the Author</a><a href="resources.html">Resources</a></nav></header><main><section class="page-hero"><h1>Terms of Use</h1></section><article class="page-content"><p><strong>Last updated: October 2026</strong></p><h2>Purpose of this website</h2><p>This website provides general information about <em>Beyond the Veil</em> and related Christian teaching materials. Content is offered for personal reflection, reading, and discussion.</p><h2>Educational and spiritual content</h2><p>Content on this website expresses the author's perspective and is not a substitute for individualized legal, medical, mental health, or other professional advice. Readers should seek qualified assistance for personal situations that require it.</p><h2>Acceptable use</h2><p>You may browse this website and share links to its pages. You agree not to misuse the site, attempt to disrupt its availability, or present the author's work as your own. Use of original content is subject to the copyright notice and applicable law.</p><h2>External links</h2><p>Links to other websites are provided for convenience or further reading. We do not control and are not responsible for external websites, their content, or their policies.</p><h2>Changes and availability</h2><p>Content may be revised or removed as the website develops. We cannot guarantee uninterrupted availability or that every page will remain unchanged.</p><h2>Contact and legal notice</h2><p>Contact details may be added to this page when a public contact method is established. These terms are general information and are not legal advice.</p></article></main><footer><p>© 2026 Bradley Hobbs. All rights reserved.</p><div><a href="copyright.html">Copyright</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></footer><script>
+(function () {
+  const header = document.querySelector('.site-header');
+  const toggle = header && header.querySelector('.menu-toggle');
+  const nav = header && header.querySelector('.site-nav');
+  if (!toggle || !nav) return;
+  function closeMenu() {
+    header.classList.remove('nav-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.querySelector('.menu-label').textContent = 'Menu';
+    toggle.querySelector('.menu-icon').textContent = '☰';
+  }
+  toggle.addEventListener('click', function () {
+    const open = header.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.querySelector('.menu-label').textContent = open ? 'Close' : 'Menu';
+    toggle.querySelector('.menu-icon').textContent = open ? '×' : '☰';
+  });
+  nav.addEventListener('click', function (event) {
+    if (event.target.closest('a')) closeMenu();
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      closeMenu();
+      toggle.focus();
+    }
+  });
+})();
+</script>
+</body></html>
