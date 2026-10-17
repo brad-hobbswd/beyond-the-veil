@@ -5,3 +5,49 @@
 .book-banner{display:block;width:100%;height:auto;max-width:1536px;margin:0 auto;object-fit:contain}
 .banner-cta{padding:1rem 1rem 2rem;background:var(--burgundy-dark)}
 @media(max-width:650px){.banner-cta{padding:.75rem 1rem 1.5rem}}
+
+
+/* Unified Beyond the Veil visual system: black, deep burgundy, antique gold, and warm ivory */
+:root{
+  --burgundy:#4a071b;
+  --burgundy-dark:#17070c;
+  --gold:#d8b76a;
+  --cream:#f5ead4;
+  --ink:#211619;
+  --muted:#6d5c5d;
+  --white:#fffaf1;
+  --gold-light:#f0d99d;
+  --panel:#f1e5d0;
+}
+body{background:var(--white);color:var(--ink)}
+.site-header,footer{background:linear-gradient(105deg,#120609 0%,#300713 55%,#16070c 100%);border-color:var(--gold)}
+.site-header{border-bottom:1px solid rgba(216,183,106,.55)}
+.brand{color:var(--cream)}
+.brand span{color:var(--gold-light)}
+.site-header nav a{transition:color .2s ease}
+.site-header nav a:hover,.site-header nav a:focus,.text-link:hover{color:var(--gold-light)}
+.hero,.page-hero{background:linear-gradient(125deg,#120609 0%,#4a071b 58%,#1b080e 100%);color:var(--cream);border-bottom:3px solid var(--gold)}
+.hero h1,.page-hero h1{color:var(--gold-light);text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.eyebrow{color:var(--gold)}
+.subtitle{color:inherit}
+.byline{color:var(--gold-light)}
+.button{background:linear-gradient(135deg,#f0d99d,#c49b49);color:#241016;border:1px solid #f5e3b2;box-shadow:0 3px 12px rgba(0,0,0,.2)}
+.button:hover,.button:focus{background:var(--gold-light);color:#17070c}
+.content-section h2,.content-section h3,.page-content h2,.page-content h3{color:var(--burgundy)}
+.content-section h2,.page-content h2{border-bottom:1px solid rgba(216,183,106,.65);padding-bottom:.55rem}
+.shaded{background:linear-gradient(135deg,#f4ead9,#e9d9bc)}
+.chapter-grid article{background:#fffaf1;border:1px solid rgba(74,7,27,.12);border-top:3px solid var(--gold);box-shadow:0 5px 18px rgba(35,10,16,.06);border-radius:2px}
+.page-content{background:var(--white)}
+.page-content a,.text-link{color:var(--burgundy)}
+.page-content a:hover,.text-link:hover{color:#8a5a13}
+.note{color:var(--muted)}
+footer{border-top:2px solid var(--gold)}
+footer a:hover{color:var(--gold-light)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+::selection{background:var(--burgundy);color:var(--gold-light)}
+.banner-hero{background:#100509}
+.banner-cta{background:linear-gradient(105deg,#120609,#3b0717,#120609);border-top:1px solid rgba(216,183,106,.55)}
+@media(max-width:650px){
+  .site-header nav{border-top:1px solid rgba(216,183,106,.25);padding-top:.75rem}
+  .hero,.page-hero{border-bottom-width:2px}
+}
