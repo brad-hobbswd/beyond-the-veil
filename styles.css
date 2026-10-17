@@ -545,3 +545,23 @@ article.page-content figure.intro-image-wrap {
     max-width: 44% !important;
   }
 }
+
+
+/* Keep Table of Contents labels such as Introduction on one line */
+.toc-entry {
+  grid-template-columns: 145px minmax(0, 1fr) 20px;
+}
+.toc-entry .toc-label {
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+@media (max-width: 480px) {
+  .toc-entry {
+    grid-template-columns: minmax(0, 1fr) 20px;
+  }
+  .toc-entry .toc-label {
+    grid-column: 1;
+    white-space: nowrap;
+  }
+}
