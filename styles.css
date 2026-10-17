@@ -526,3 +526,22 @@ article.page-content figure.intro-image-wrap + p { margin-top: 0; }
   }
   article.page-content figure.intro-image-wrap figcaption { font-size: .7rem; }
 }
+
+
+/* Refined introduction illustration sizing: larger but still text-friendly */
+article.page-content figure.intro-image-wrap {
+  width: 250px !important;
+  max-width: 36% !important;
+}
+@media (max-width: 700px) {
+  article.page-content figure.intro-image-wrap {
+    width: 195px !important;
+    max-width: 41% !important;
+  }
+}
+@media (max-width: 420px) {
+  article.page-content figure.intro-image-wrap {
+    width: 155px !important;
+    max-width: 44% !important;
+  }
+}
