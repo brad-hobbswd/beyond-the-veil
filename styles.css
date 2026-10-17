@@ -1164,3 +1164,15 @@ article.page-content figure.intro-image-wrap {
     padding: .75rem 1rem;
   }
 }
+
+
+/* Chapter 1 inline artwork: square images alternate sides and let text wrap naturally */
+.chapter-inline-image{width:min(38%,260px);aspect-ratio:1/1;margin:.35rem 0 1rem;}
+.chapter-inline-image img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border:1px solid rgba(216,183,106,.8);box-shadow:0 8px 22px rgba(35,10,16,.16);}
+.chapter-inline-image figcaption{font-size:.82rem;line-height:1.45;color:#6d5c5d;margin-top:.45rem;font-style:italic;}
+.chapter-image-left{float:left;margin-right:1.35rem;margin-left:0;}
+.chapter-image-right{float:right;margin-left:1.35rem;margin-right:0;}
+.chapter-inline-image::after{content:"";display:block;clear:both;}
+.chapter h2{clear:both;}
+@media(max-width:650px){.chapter-inline-image{width:42%;max-width:190px;margin-top:.25rem;margin-bottom:.75rem}.chapter-image-left{margin-right:.9rem}.chapter-image-right{margin-left:.9rem}.chapter-inline-image figcaption{font-size:.75rem;}}
+@media(max-width:380px){.chapter-inline-image{width:40%;max-width:145px}.chapter-image-left{margin-right:.7rem}.chapter-image-right{margin-left:.7rem}.chapter-inline-image figcaption{font-size:.7rem;}}
