@@ -470,3 +470,59 @@ a, button { touch-action: manipulation; }
   .page-content .intro-image-right { margin-left: .8rem; }
   .page-content .intro-image-wrap figcaption { font-size: .75rem; }
 }
+
+
+/* Final override: keep introduction figures compact and truly floated */
+article.page-content figure.intro-image-wrap {
+  display: block !important;
+  float: left !important;
+  clear: none !important;
+  width: 210px !important;
+  max-width: 34% !important;
+  margin: .35rem 1.25rem 1rem 0 !important;
+  padding: 0 !important;
+  position: relative;
+}
+article.page-content figure.intro-image-wrap.intro-image-right {
+  float: right !important;
+  margin: .35rem 0 1rem 1.25rem !important;
+  clear: none !important;
+}
+article.page-content figure.intro-image-wrap img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+}
+article.page-content figure.intro-image-wrap figcaption {
+  display: block;
+  width: 100%;
+  font-size: .78rem;
+  line-height: 1.4;
+}
+article.page-content figure.intro-image-wrap + p { margin-top: 0; }
+@media (max-width: 700px) {
+  article.page-content figure.intro-image-wrap {
+    width: 165px !important;
+    max-width: 39% !important;
+    margin-right: .9rem !important;
+  }
+  article.page-content figure.intro-image-wrap.intro-image-right {
+    margin-left: .9rem !important;
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 420px) {
+  article.page-content figure.intro-image-wrap {
+    width: 138px !important;
+    max-width: 43% !important;
+    margin-right: .7rem !important;
+  }
+  article.page-content figure.intro-image-wrap.intro-image-right {
+    margin-left: .7rem !important;
+    margin-right: 0 !important;
+  }
+  article.page-content figure.intro-image-wrap figcaption { font-size: .7rem; }
+}
