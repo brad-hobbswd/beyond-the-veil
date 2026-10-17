@@ -1,2 +1,31 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Privacy Policy | Beyond the Veil</title><meta name="description" content="Privacy information for visitors to the Beyond the Veil website by Bradley Hobbs."><link rel="canonical" href="https://brad-hobbswd.github.io/beyond-the-veil/privacy.html"><link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><a class="brand" href="index.html">Beyond the Veil<span>Bradley Hobbs</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#book">The Book</a><a href="index.html#contents">Contents</a><a href="about-author.html">About the Author</a><a href="resources.html">Resources</a></nav></header><main><section class="page-hero"><h1>Privacy Policy</h1></section><article class="page-content"><p><strong>Last updated: October 2026</strong></p><h2>About this website</h2><p>This website provides information about <em>Beyond the Veil</em> by Bradley Hobbs. It is intended as a static informational website. At the time of publication, it does not provide visitor accounts, a contact form, or direct purchases.</p><h2>Information and hosting</h2><p>The site is hosted through GitHub Pages. GitHub and its infrastructure providers may process technical information, such as IP address, browser details, and server logs, as part of providing and securing the service. Their handling of information is governed by their own policies and practices. Please review GitHub's privacy statement for current details.</p><p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">Read GitHub's Privacy Statement</a>.</p><h2>Cookies and analytics</h2><p>This website has not intentionally added analytics tools, advertising trackers, or a cookie based visitor profile. Hosting or linked services may operate independently under their own policies.</p><h2>Links to other websites</h2><p>This site may link to third party websites. We do not control their content or privacy practices. Review the policies of those websites before sharing personal information.</p><h2>Policy updates</h2><p>This policy may be updated if the site's features or practices change. The revision date above will be updated when appropriate.</p><p>This page is a general privacy notice, not legal advice.</p></article></main><footer><p>© 2026 Bradley Hobbs. All rights reserved.</p><div><a href="copyright.html">Copyright</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></footer></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Privacy Policy | Beyond the Veil</title><meta name="description" content="Privacy information for visitors to the Beyond the Veil website by Bradley Hobbs."><link rel="canonical" href="https://brad-hobbswd.github.io/beyond-the-veil/privacy.html"><link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><a class="brand" href="index.html">Beyond the Veil<span>Bradley Hobbs</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-label">Menu</span><span class="menu-icon" aria-hidden="true">☰</span></button><nav class="site-nav" id="primary-navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="about-book.html">About the Book</a><a href="table-of-contents.html">Contents</a><a href="about-author.html">About the Author</a><a href="resources.html">Resources</a></nav></header><main><section class="page-hero"><h1>Privacy Policy</h1></section><article class="page-content"><p><strong>Last updated: October 2026</strong></p><h2>About this website</h2><p>This website provides information about <em>Beyond the Veil</em> by Bradley Hobbs. It is intended as a static informational website. At the time of publication, it does not provide visitor accounts, a contact form, or direct purchases.</p><h2>Information and hosting</h2><p>The site is hosted through GitHub Pages. GitHub and its infrastructure providers may process technical information, such as IP address, browser details, and server logs, as part of providing and securing the service. Their handling of information is governed by their own policies and practices. Please review GitHub's privacy statement for current details.</p><p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">Read GitHub's Privacy Statement</a>.</p><h2>Cookies and analytics</h2><p>This website has not intentionally added analytics tools, advertising trackers, or a cookie based visitor profile. Hosting or linked services may operate independently under their own policies.</p><h2>Links to other websites</h2><p>This site may link to third party websites. We do not control their content or privacy practices. Review the policies of those websites before sharing personal information.</p><h2>Policy updates</h2><p>This policy may be updated if the site's features or practices change. The revision date above will be updated when appropriate.</p><p>This page is a general privacy notice, not legal advice.</p></article></main><footer><p>© 2026 Bradley Hobbs. All rights reserved.</p><div><a href="copyright.html">Copyright</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></footer><script>
+(function () {
+  const header = document.querySelector('.site-header');
+  const toggle = header && header.querySelector('.menu-toggle');
+  const nav = header && header.querySelector('.site-nav');
+  if (!toggle || !nav) return;
+  function closeMenu() {
+    header.classList.remove('nav-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.querySelector('.menu-label').textContent = 'Menu';
+    toggle.querySelector('.menu-icon').textContent = '☰';
+  }
+  toggle.addEventListener('click', function () {
+    const open = header.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.querySelector('.menu-label').textContent = open ? 'Close' : 'Menu';
+    toggle.querySelector('.menu-icon').textContent = open ? '×' : '☰';
+  });
+  nav.addEventListener('click', function (event) {
+    if (event.target.closest('a')) closeMenu();
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      closeMenu();
+      toggle.focus();
+    }
+  });
+})();
+</script>
+</body></html>
