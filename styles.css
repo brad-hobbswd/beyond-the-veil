@@ -1168,3 +1168,7 @@ article.page-content figure.intro-image-wrap {
 
 /* Keep each new chapter section below the preceding floated illustration. */
 .chapter h2 { clear: both; }
+
+
+/* Chapter Scripture quotations */
+.scripture-quote{margin:1.5rem 0;padding:1rem 1.25rem;border-left:4px solid #b78b43;background:rgba(128,25,47,.07);color:inherit;border-radius:0 .4rem .4rem 0}.scripture-quote p{font-family:Georgia,serif;font-size:1.08rem;line-height:1.7;font-style:italic;margin:.1rem 0 .65rem}.scripture-quote cite{display:block;font-size:.9rem;font-style:normal;font-weight:700;color:var(--burgundy,#72233a)}.intro-image-wrap{width:min(42%,320px);margin:1rem 1.4rem 1rem 0}.intro-image-right{float:right;margin:1rem 0 1rem 1.4rem}.intro-image-left{float:left;margin:1rem 1.4rem 1rem 0}.intro-image-wrap img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:.35rem}.intro-image-wrap figcaption{font-size:.84rem;line-height:1.45;margin-top:.5rem;color:inherit;font-style:italic}@media(max-width:640px){.intro-image-wrap,.intro-image-left,.intro-image-right{float:none;width:min(100%,360px);margin:1.2rem auto;clear:both}.intro-image-wrap img{width:100%}}
