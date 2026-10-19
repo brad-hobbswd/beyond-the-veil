@@ -1179,3 +1179,30 @@ article.page-content figure.intro-image-wrap {
 /* Prevent multiple Chapter 6 illustrations from colliding or squeezing adjacent text. */
 article.page-content figure.intro-image-wrap { clear: both !important; }
 article.page-content blockquote.scripture-quote { clear: both; width: auto; max-width: 100%; box-sizing: border-box; }
+
+/* Chapter 6: let selected illustrations sit beside the Scripture text they illustrate. */
+article.page-content blockquote.scripture-quote figure.intro-image-wrap {
+  float: right !important;
+  clear: none !important;
+  width: 145px !important;
+  max-width: 42% !important;
+  margin: .25rem 0 .75rem 1rem !important;
+  position: relative;
+}
+article.page-content blockquote.scripture-quote figure.intro-image-wrap img {
+  display: block !important;
+  width: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+}
+article.page-content blockquote.scripture-quote figure.intro-image-wrap figcaption {
+  font-size: .72rem;
+  line-height: 1.35;
+}
+@media (max-width: 420px) {
+  article.page-content blockquote.scripture-quote figure.intro-image-wrap {
+    width: 118px !important;
+    max-width: 43% !important;
+    margin-left: .65rem !important;
+  }
+}
