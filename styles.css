@@ -1214,3 +1214,25 @@ article.page-content blockquote.scripture-quote figure.intro-image-wrap + figure
 article.page-content blockquote.scripture-quote figure.intro-image-wrap {
   margin-bottom: 1rem !important;
 }
+
+/* Compact chapter companion cards on mobile */
+@media (max-width: 680px) {
+  .study-room-links {
+    height: auto !important;
+    min-height: 0 !important;
+    justify-content: flex-start !important;
+    gap: .85rem !important;
+    padding: 1.1rem !important;
+  }
+  .study-room-links .study-room-copy {
+    flex: 0 1 auto !important;
+    min-height: 0 !important;
+  }
+  .study-room-links .study-room-copy > p:last-child {
+    margin-bottom: 0 !important;
+  }
+  .study-room-links a.study-room-button {
+    margin-top: .15rem !important;
+    align-self: stretch;
+  }
+}
