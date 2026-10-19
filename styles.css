@@ -1206,3 +1206,11 @@ article.page-content blockquote.scripture-quote figure.intro-image-wrap figcapti
     margin-left: .65rem !important;
   }
 }
+
+/* Chapter 6: space the final illustrations within the Matthew passage. */
+article.page-content blockquote.scripture-quote figure.intro-image-wrap + figure.intro-image-wrap {
+  margin-top: 1.5rem !important;
+}
+article.page-content blockquote.scripture-quote figure.intro-image-wrap {
+  margin-bottom: 1rem !important;
+}
