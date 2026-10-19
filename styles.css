@@ -1178,7 +1178,7 @@ article.page-content figure.intro-image-wrap {
 
 /* Prevent multiple Chapter 6 illustrations from colliding or squeezing adjacent text. */
 article.page-content.chapter:has(img[src*="chapter6/"]) figure.intro-image-wrap { clear: both !important; }
-article.page-content blockquote.scripture-quote { clear: both; width: auto; max-width: 100%; box-sizing: border-box; }
+article.page-content.chapter:has(img[src*="chapter6/"]) blockquote.scripture-quote { clear: both; width: auto; max-width: 100%; box-sizing: border-box; }
 
 /* Chapter 6: let selected illustrations sit beside the Scripture text they illustrate. */
 article.page-content blockquote.scripture-quote figure.intro-image-wrap {
