@@ -1253,3 +1253,36 @@ article.page-content blockquote.scripture-quote figure.intro-image-wrap {
 .author-closing{margin-top:2.5rem;padding:clamp(1.25rem,3vw,2rem);background:#f8f2e7;border:1px solid #e3d0a8;border-radius:8px}
 .author-closing .author-separator{display:inline-block;margin:0 .75rem;color:#b18a3e}
 @media(max-width:700px){.author-profile .author-introduction{grid-template-columns:1fr;gap:1.4rem;padding:1rem}.author-portrait img{width:min(100%,280px);margin:0 auto;max-height:350px}.author-introduction-copy h2,.author-story h2,.author-book-connection h2,.author-closing h2{font-size:1.65rem}.author-profile blockquote{padding:1rem;font-size:1.02rem}.author-closing .author-separator{margin:0 .35rem}}
+
+
+/* Final spacing correction for the About the Author closing panel */
+.author-profile .author-closing{
+  padding:clamp(1.25rem,3vw,2rem);
+  overflow:hidden;
+}
+.author-profile .author-closing h2{
+  display:block;
+  margin:0 0 1rem;
+  padding:0 0 .75rem;
+  font-size:clamp(1.65rem,3vw,2.15rem);
+  line-height:1.25;
+  overflow-wrap:break-word;
+}
+.author-profile .author-closing p{
+  margin:0 0 1.25rem;
+  max-width:76ch;
+}
+.author-profile .author-closing a{
+  display:inline-block;
+  margin:.25rem .15rem .4rem 0;
+  line-height:1.6;
+}
+.author-profile .author-closing .author-separator{
+  margin:0 .65rem;
+}
+@media(max-width:600px){
+  .author-profile .author-closing{padding:1.1rem}
+  .author-profile .author-closing h2{font-size:1.55rem}
+  .author-profile .author-closing .author-separator{display:none}
+  .author-profile .author-closing a{display:block;width:fit-content;max-width:100%;margin:.55rem 0}
+}
