@@ -1388,3 +1388,12 @@ article.page-content blockquote.scripture-quote figure.intro-image-wrap {
     grid-template-columns: minmax(0, 1fr) !important;
   }
 }
+
+
+/* Keep the homepage book link visually connected to its introduction. */
+#book.content-section {
+  padding-bottom: .75rem;
+}
+.book-more-link {
+  padding-top: .5rem;
+}
