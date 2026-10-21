@@ -1236,3 +1236,20 @@ article.page-content blockquote.scripture-quote figure.intro-image-wrap {
     align-self: stretch;
   }
 }
+
+
+/* About the Author: readable editorial profile and responsive portrait */
+.author-page-hero .subtitle{max-width:780px;margin:0 auto;color:#f8f2e7;line-height:1.55}
+.author-profile{max-width:1000px}
+.author-profile .author-introduction{display:grid;grid-template-columns:minmax(220px,300px) minmax(0,1fr);gap:clamp(1.5rem,4vw,3rem);align-items:start;margin:0 0 3rem;padding:clamp(1.2rem,3vw,2rem);background:linear-gradient(145deg,#fffdf9,#f8f2e7);border:1px solid #eadfc9;border-radius:10px;box-shadow:0 8px 28px rgba(53,17,27,.06)}
+.author-portrait{margin:0;text-align:center}
+.author-portrait img{display:block;width:100%;max-height:390px;aspect-ratio:4/5;object-fit:cover;object-position:center 25%;border:5px solid #fffdf9;outline:1px solid #d9bd7a;border-radius:5px;box-shadow:0 10px 25px rgba(53,17,27,.14)}
+.author-portrait figcaption{margin-top:.8rem;color:#725a36;font:700 .8rem/1.4 Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.author-introduction-copy .eyebrow,.author-story .eyebrow,.author-book-connection .eyebrow{margin:0 0 .5rem;color:#8a6728}
+.author-introduction-copy h2,.author-story h2,.author-book-connection h2,.author-closing h2{margin:.25rem 0 1rem;color:var(--burgundy);font-size:clamp(1.7rem,3.5vw,2.35rem);line-height:1.25}
+.author-introduction-copy p,.author-story p,.author-book-connection p,.author-closing p{font-size:1.06rem;line-height:1.9}
+.author-story,.author-book-connection{margin:2.75rem 0;padding:0 0 2rem;border-bottom:1px solid rgba(216,183,106,.45)}
+.author-profile blockquote{margin:1.6rem 0;padding:1.25rem 1.5rem;border-left:4px solid var(--gold);background:linear-gradient(110deg,#f4ead9,#fffaf1);color:#3d1b25;font-size:1.12rem;line-height:1.85}
+.author-closing{margin-top:2.5rem;padding:clamp(1.25rem,3vw,2rem);background:#f8f2e7;border:1px solid #e3d0a8;border-radius:8px}
+.author-closing .author-separator{display:inline-block;margin:0 .75rem;color:#b18a3e}
+@media(max-width:700px){.author-profile .author-introduction{grid-template-columns:1fr;gap:1.4rem;padding:1rem}.author-portrait img{width:min(100%,280px);margin:0 auto;max-height:350px}.author-introduction-copy h2,.author-story h2,.author-book-connection h2,.author-closing h2{font-size:1.65rem}.author-profile blockquote{padding:1rem;font-size:1.02rem}.author-closing .author-separator{margin:0 .35rem}}
