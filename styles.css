@@ -1286,3 +1286,46 @@ article.page-content blockquote.scripture-quote figure.intro-image-wrap {
   .author-profile .author-closing .author-separator{display:none}
   .author-profile .author-closing a{display:block;width:fit-content;max-width:100%;margin:.55rem 0}
 }
+
+
+/* Repair narrow overview cards on the home page */
+#contents .chapter-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1.25rem;
+  align-items:stretch;
+}
+#contents .chapter-grid article{
+  min-width:0;
+  padding:clamp(1.1rem,2.5vw,1.65rem);
+  border:1px solid #e5d4ad;
+  border-top:4px solid var(--gold);
+  border-radius:6px;
+  background:rgba(255,253,249,.94);
+  box-shadow:0 8px 22px rgba(53,17,27,.06);
+  overflow-wrap:break-word;
+  word-break:normal;
+}
+#contents .chapter-grid article h3{
+  margin:0 0 .8rem;
+  font-size:1.35rem;
+  line-height:1.3;
+}
+#contents .chapter-grid article p{
+  margin:.5rem 0;
+  line-height:1.65;
+}
+#contents .chapter-grid article p:last-child{
+  color:var(--muted);
+  font:700 .78rem/1.5 Arial,sans-serif;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+#contents > h2{
+  max-width:100%;
+  overflow-wrap:normal;
+  word-break:normal;
+}
+@media(max-width:600px){
+  #contents .chapter-grid{grid-template-columns:minmax(0,1fr);gap:1rem}
+  #contents .chapter-grid article{padding:1.1rem}
+}
