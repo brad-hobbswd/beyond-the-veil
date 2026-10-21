@@ -1329,3 +1329,62 @@ article.page-content blockquote.scripture-quote figure.intro-image-wrap {
   #contents .chapter-grid{grid-template-columns:minmax(0,1fr);gap:1rem}
   #contents .chapter-grid article{padding:1.1rem}
 }
+
+
+/* Hard reset for the homepage Book Overview layout.
+   Keep the section's children full-width so text and cards cannot collapse. */
+#contents.content-section.shaded {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  padding-inline: max(1.25rem, calc((100% - 1040px) / 2)) !important;
+}
+#contents.content-section.shaded > .eyebrow,
+#contents.content-section.shaded > h2,
+#contents.content-section.shaded > .note {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  text-align: left;
+}
+#contents.content-section.shaded > h2 {
+  font-size: clamp(2rem, 5vw, 3rem) !important;
+  line-height: 1.2 !important;
+  white-space: normal !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+#contents.content-section.shaded > .chapter-grid {
+  display: grid !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 1.25rem !important;
+  margin: 2rem 0 !important;
+}
+#contents.content-section.shaded > .chapter-grid > article {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  padding: 1.25rem !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+}
+#contents.content-section.shaded > .chapter-grid > article h3,
+#contents.content-section.shaded > .chapter-grid > article p {
+  width: 100% !important;
+  max-width: 100% !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+}
+@media (max-width: 600px) {
+  #contents.content-section.shaded { padding-inline: 1rem !important; }
+  #contents.content-section.shaded > .chapter-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
