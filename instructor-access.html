@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Instructor access for the Beyond the Veil eight week church and group study by Bradley Hobbs.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#241b18">
+<title>Instructor Sign In | Beyond the Veil | Bradley Hobbs</title>
+<link rel="canonical" href="https://brad-hobbswd.github.io/beyond-the-veil/instructor-access.html">
+<link rel="stylesheet" href="styles.css">
+<style>
+.access-wrap{max-width:900px;margin:clamp(2rem,5vw,4rem) auto;padding:0 clamp(1rem,3vw,1.5rem)}
+.access-card{padding:clamp(1.25rem,4vw,2.5rem);background:#fffdf9;border:1px solid #c9a75e;border-radius:9px;box-shadow:0 10px 30px rgba(36,27,24,.08)}
+.access-card h2{margin-top:0;color:#5c201c;font-size:clamp(1.5rem,3vw,2rem)}
+.access-card p{line-height:1.8}
+.access-form{display:grid;gap:12px;margin:24px 0}
+.access-form label{font-weight:700;color:#5c201c}
+.access-form input{box-sizing:border-box;width:100%;padding:14px 15px;border:1px solid #b9a581;border-radius:5px;background:white;color:#241b18;font:inherit}
+.access-form input:focus-visible,.access-form button:focus-visible,.access-card a:focus-visible{outline:3px solid #c9a75e;outline-offset:3px}
+.access-form button{justify-self:start;cursor:pointer}
+.access-error{margin:0;color:#9b1c1c;font-weight:700}
+.access-downloads{margin-top:28px;padding-top:22px;border-top:1px solid #e1d0ad}
+.access-downloads h2{margin-top:0}
+.access-download-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:20px 0}
+.access-download-item{padding:18px;background:#fff8e8;border:1px solid #e1d0ad;border-radius:5px}
+.access-download-item h3{margin:0 0 8px;color:#5c201c;font-size:1.08rem}
+.access-download-item p{margin:0;color:#6a5c52;font-size:.92rem}
+.access-status{display:inline-block;margin-top:12px;padding:5px 8px;background:#f2e6d1;border:1px solid #d9c28b;border-radius:3px;color:#805b20;font:bold .72rem Arial,sans-serif}
+.access-note{margin-top:24px;padding:16px 18px;background:#fff8e8;border-left:4px solid #b58b39;border-radius:3px;font-size:.93rem}
+[hidden]{display:none!important}
+@media(max-width:700px){.access-download-grid{grid-template-columns:1fr}.access-download-item{padding:16px}}
+</style>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="index.html">Beyond the Veil<span>Bradley Hobbs</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-icon" aria-hidden="true">☰</span><span class="menu-label">Menu</span></button><nav class="site-nav" id="primary-navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="about-book.html">About the Book</a><a href="table-of-contents.html">Contents</a><a href="about-author.html">About the Author</a><a href="resources.html" aria-current="page">Resources</a></nav></header>
+<main>
+<section class="page-hero"><p class="eyebrow">BEYOND THE VEIL</p><h1>Instructor Sign In</h1><p class="subtitle">Teaching materials for the eight week church and group study.</p></section>
+<article class="access-wrap">
+<section class="access-card">
+<h2>Instructor Access</h2>
+<p>Enter the instructor password to reveal the materials prepared for leaders facilitating <em>Beyond the Veil</em>.</p>
+<form class="access-form" id="instructor-login">
+<label for="access-password">Instructor password</label>
+<input id="access-password" name="password" type="password" autocomplete="current-password" required>
+<button class="button button-primary" type="submit">Open Instructor Materials</button>
+<p class="access-error" id="access-error" role="alert" hidden>The password did not match. Please try again.</p>
+</form>
+<section class="access-downloads" id="instructor-downloads" hidden aria-live="polite">
+<h2>Instructor Materials</h2>
+<p>The following download slots are ready. Once the PDF documents are uploaded, their links can be activated here.</p>
+<div class="access-download-grid">
+<article class="access-download-item"><h3>Instructor Guide</h3><p>Leader guidance, preparation notes, and session support.</p><span class="access-status">PDF to be added</span></article>
+<article class="access-download-item"><h3>Weekly Answer Key</h3><p>Teaching notes and suggested answers for weekly discussions.</p><span class="access-status">PDF to be added</span></article>
+<article class="access-download-item"><h3>Eight Week Lesson Plans</h3><p>Session objectives, Scripture readings, and weekly activities.</p><span class="access-status">PDF to be added</span></article>
+</div>
+<button class="button button-secondary" id="lock-materials" type="button">Hide Materials</button>
+</section>
+<div class="access-note"><strong>Important access note:</strong> This is a static website hosted on public GitHub Pages. The password screen hides these resource details from casual visitors, but it cannot securely protect files placed in the public repository. For true access control, instructor PDFs must be hosted in a private service with permissions enabled.</div>
+<p><a class="text-link" href="resources.html#downloadable-materials">Return to Study Materials and Downloads</a></p>
+</section>
+</article>
+</main>
+<footer><p>© 2026 Bradley Hobbs. All rights reserved.</p><div><a href="copyright.html">Copyright</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></footer>
+<script>
+(function(){const h=document.querySelector('.site-header'),b=h&&h.querySelector('.menu-toggle'),n=h&&h.querySelector('.site-nav');if(b&&n){function close(){h.classList.remove('nav-open');b.setAttribute('aria-expanded','false');b.querySelector('.menu-label').textContent='Menu';b.querySelector('.menu-icon').textContent='☰';}b.addEventListener('click',function(){const o=h.classList.toggle('nav-open');b.setAttribute('aria-expanded',String(o));b.querySelector('.menu-label').textContent=o?'Close':'Menu';b.querySelector('.menu-icon').textContent=o?'×':'☰';});n.addEventListener('click',function(e){if(e.target.closest('a'))close();});document.addEventListener('keydown',function(e){if(e.key==='Escape'){close();b.focus();}});}
+const form=document.getElementById('instructor-login'),field=document.getElementById('access-password'),error=document.getElementById('access-error'),downloads=document.getElementById('instructor-downloads'),lock=document.getElementById('lock-materials');const expected=String.fromCharCode(49,49,55,48,57,57,98,97,112,98,105,35);form.addEventListener('submit',function(e){e.preventDefault();if(field.value===expected){downloads.hidden=false;error.hidden=true;field.value='';downloads.scrollIntoView({behavior:'smooth',block:'nearest'});}else{downloads.hidden=true;error.hidden=false;field.focus();}});lock.addEventListener('click',function(){downloads.hidden=true;field.focus();});})();
+</script>
+</body>
+</html>
