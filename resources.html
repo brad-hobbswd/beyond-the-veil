@@ -377,6 +377,7 @@
 (function(){const h=document.querySelector('.site-header'),b=h&&h.querySelector('.menu-toggle'),n=h&&h.querySelector('.site-nav');if(!b||!n)return;function close(){h.classList.remove('nav-open');b.setAttribute('aria-expanded','false');b.querySelector('.menu-label').textContent='Menu';b.querySelector('.menu-icon').textContent='☰';}b.addEventListener('click',function(){const o=h.classList.toggle('nav-open');b.setAttribute('aria-expanded',String(o));b.querySelector('.menu-label').textContent=o?'Close':'Menu';b.querySelector('.menu-icon').textContent=o?'×':'☰';});n.addEventListener('click',function(e){if(e.target.closest('a'))close();});document.addEventListener('keydown',function(e){if(e.key==='Escape'){close();b.focus();}});})();
 </script>
 
+<script>
 /* Accessible weekly reflection dialogs */
 (function(){
   const openButtons = document.querySelectorAll('[data-reflection-target]');
@@ -399,6 +400,7 @@
     dialog.addEventListener('close',function(){if(lastTrigger) lastTrigger.focus();});
   });
 })();
+</script>
 
 </body>
 </html>
