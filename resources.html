@@ -140,6 +140,31 @@
 .resource-downloads .button{display:inline-block;margin-top:6px}
 @media(max-width:700px){.resource-download-grid{grid-template-columns:1fr}.resource-download-card{padding:19px}.resource-placeholder-list li{gap:8px}}
 
+
+/* Weekly reflection prompts paired with the eight-week assignments */
+.weekly-reflections{margin:3rem 0;padding:clamp(1rem,2.5vw,1.75rem);background:linear-gradient(145deg,#fffaf0,#f7f0e4);border:1px solid #d9c28b;border-radius:9px;scroll-margin-top:24px}
+.weekly-reflections-heading{max-width:760px;margin:0 auto 1.5rem;text-align:center}
+.weekly-reflections-heading .eyebrow{margin:0 0 .45rem;color:#8c6826;font:bold .72rem Arial,sans-serif;letter-spacing:.14em}
+.weekly-reflections-heading h2{margin:.25rem 0 .7rem;color:#5c201c;font-size:clamp(1.55rem,3vw,2.1rem);line-height:1.2}
+.weekly-reflections-heading p:last-child{margin:0;color:#5f5147;line-height:1.7}
+.weekly-reflections-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:12px}
+.weekly-reflection{min-width:0;overflow:hidden;background:#fffdf9;border:1px solid #e1d0ad;border-radius:6px;scroll-margin-top:20px}
+.weekly-reflection>summary{display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px 12px;padding:15px 16px;list-style:none;cursor:pointer}
+.weekly-reflection>summary::-webkit-details-marker{display:none}
+.weekly-reflection>summary:focus-visible{outline:3px solid #c9a75e;outline-offset:-3px}
+.weekly-reflection>summary:hover,.weekly-reflection[open]>summary{background:#f6ecd7}
+.reflection-week{grid-column:1/-1;color:#8c6826;font:bold .68rem Arial,sans-serif;letter-spacing:.13em}
+.reflection-title{color:#5c201c;font:bold 1.02rem/1.35 Georgia,"Times New Roman",serif}
+.reflection-toggle{color:#805b20;font:bold .72rem Arial,sans-serif;white-space:nowrap}
+.reflection-toggle span{display:inline-block;margin-left:3px;font-size:.95rem}
+.weekly-reflection[open] .reflection-toggle span{transform:rotate(45deg)}
+.weekly-reflection-content{padding:2px 16px 15px;border-top:1px solid #eadfc9}
+.weekly-reflection-content p{margin:12px 0;line-height:1.7;font-size:.96rem}
+.weekly-reflection-content p:last-child{margin-bottom:0}
+.weekly-reflection-content strong{color:#5c201c}
+@media(max-width:700px){.weekly-reflections{margin:2rem 0;padding:12px}.weekly-reflections-grid{grid-template-columns:1fr}.weekly-reflection>summary{padding:14px}.weekly-reflection-content{padding:2px 14px 14px}}
+@media(prefers-reduced-motion:reduce){.weekly-reflection>summary{scroll-behavior:auto}}
+
 </style>
 </head>
 <body>
@@ -192,23 +217,30 @@
 </div><div class="syllabus-panel syllabus-completion"><h3>Course Completion Reflection</h3><p>At the final session, reflect on what you learned about God's authority, submission, obedience, leadership, correction, and personal responsibility. Identify one truth to carry forward and one practical change to continue making.</p><p>Completion is based on participation and personal reflection, not unquestioning agreement with a human leader or disclosure of private information.</p></div>
 </section>
 
-<section><h2>1. Move Forward Without Carrying Everything</h2>
+<section class="weekly-reflections" id="weekly-reflections">
+  <div class="weekly-reflections-heading">
+    <p class="eyebrow">PERSONAL APPLICATION</p>
+    <h2>Weekly Reflection and Application</h2>
+    <p>Use these reflections alongside each week's assigned reading and Scripture passages. Open a week to read the reflection and consider how to apply it personally.</p>
+  </div>
+  <div class="weekly-reflections-grid">
+<details class="weekly-reflection"><summary><span class="reflection-week">WEEK 01</span><span class="reflection-title">Move Forward Without Carrying Everything</span><span class="reflection-toggle">Reflect <span aria-hidden="true">＋</span></span></summary><div class="weekly-reflection-content">
 <p>Some experiences require time to process. Some relationships need honest conversations. Some situations require accountability, boundaries, or outside assistance. But not every question will receive an answer, and not every person will acknowledge the harm they have caused.</p>
 <p>You can still move forward.</p>
 <p>Moving forward does not mean pretending the past never happened. It means refusing to let the past control every decision about your future. It means learning what you can, taking responsibility for your own choices, seeking help when necessary, and allowing yourself to grow beyond what wounded you.</p>
 <p><strong>Scripture references:</strong> Philippians 3:13 to 14; Isaiah 43:18 to 19; Proverbs 4:25 to 27.</p>
-<p><strong>Personal application:</strong> Identify one issue you continue to carry that is no longer helping you make a wise or faithful decision. Consider what practical step would help you move forward, whether that means seeking counsel, establishing a boundary, making amends, or accepting that another person may never provide the explanation you desire.</p></section>
+<p><strong>Personal application:</strong> Identify one issue you continue to carry that is no longer helping you make a wise or faithful decision. Consider what practical step would help you move forward, whether that means seeking counsel, establishing a boundary, making amends, or accepting that another person may never provide the explanation you desire.</p></div></details>
 
-<section><h2>2. Refuse to Participate in Gossip</h2>
+<details class="weekly-reflection"><summary><span class="reflection-week">WEEK 02</span><span class="reflection-title">Refuse to Participate in Gossip</span><span class="reflection-toggle">Reflect <span aria-hidden="true">＋</span></span></summary><div class="weekly-reflection-content">
 <p>Concern for another person should not become an excuse to discuss their private struggles with people who have no legitimate reason to know about them.</p>
 <p>Gossip can disguise itself as prayer requests, concern, spiritual discernment, or a desire to protect others. Yet sharing unverified claims, private details, or humiliating information can cause harm even when the conversation begins with good intentions.</p>
 <p>There is a difference between seeking appropriate counsel and spreading personal information. There is a difference between reporting misconduct to someone who can responsibly address it and discussing allegations with people who cannot help resolve the situation.</p>
 <p>Refusing gossip does not mean remaining silent about abuse, threats, misconduct, or danger. Those matters may require honest reporting to appropriate people or authorities. Protecting confidentiality must never become a way to conceal wrongdoing.</p>
 <p>The goal is to speak truthfully, share only what is necessary, and direct concerns toward constructive and responsible action.</p>
 <p><strong>Scripture references:</strong> Proverbs 11:13; Proverbs 16:28; Ephesians 4:29; James 1:19.</p>
-<p><strong>Personal application:</strong> Before sharing information about someone else, ask yourself three questions. Is it true? Is sharing it necessary for a legitimate purpose? Am I speaking to someone who can responsibly help? If the conversation serves only to spread suspicion or damage someone’s reputation, choose silence.</p></section>
+<p><strong>Personal application:</strong> Before sharing information about someone else, ask yourself three questions. Is it true? Is sharing it necessary for a legitimate purpose? Am I speaking to someone who can responsibly help? If the conversation serves only to spread suspicion or damage someone’s reputation, choose silence.</p></div></details>
 
-<section><h2>3. Care Without Taking Ownership of Someone Else’s Life</h2>
+<details class="weekly-reflection"><summary><span class="reflection-week">WEEK 03</span><span class="reflection-title">Care Without Taking Ownership of Someone Else’s Life</span><span class="reflection-toggle">Reflect <span aria-hidden="true">＋</span></span></summary><div class="weekly-reflection-content">
 <p>Compassion is a gift, but compassion does not require you to become responsible for every problem another person faces.</p>
 <p>You can listen without becoming someone’s permanent emotional refuge. You can pray without promising to fix everything. You can offer practical assistance without surrendering your own responsibilities. You can love someone while recognizing that their decisions remain their own.</p>
 <p>Galatians 6:2 and Galatians 6:5 offer an important balance. Scripture calls believers to help carry one another’s burdens, while also recognizing each person’s personal responsibility.</p>
@@ -217,9 +249,9 @@
 <p>You cannot force someone to change. You cannot repent on someone else’s behalf. You cannot make another person accept help. You cannot build a healthy relationship alone when the other person refuses to participate.</p>
 <p>Care does not require you to sacrifice your own stability until you have nothing left to give.</p>
 <p><strong>Scripture references:</strong> Galatians 6:2 to 5; Romans 12:18; 1 Thessalonians 4:11 to 12.</p>
-<p><strong>Personal application:</strong> Consider whether you are helping someone in a healthy way or repeatedly taking responsibility for consequences that belong to them. Ask what support you can reasonably offer without neglecting your own well being, family, responsibilities, or relationship with God.</p></section>
+<p><strong>Personal application:</strong> Consider whether you are helping someone in a healthy way or repeatedly taking responsibility for consequences that belong to them. Ask what support you can reasonably offer without neglecting your own well being, family, responsibilities, or relationship with God.</p></div></details>
 
-<section><h2>4. Protect Your Heart Without Becoming Hard</h2>
+<details class="weekly-reflection"><summary><span class="reflection-week">WEEK 04</span><span class="reflection-title">Protect Your Heart Without Becoming Hard</span><span class="reflection-toggle">Reflect <span aria-hidden="true">＋</span></span></summary><div class="weekly-reflection-content">
 <p>Protection is not the same as bitterness. Boundaries are not automatically rebellion. Distance is not always rejection.</p>
 <p>There are situations in which a relationship can improve through honest conversation, mutual responsibility, and changed behavior. There are other situations in which repeated manipulation, intimidation, dishonesty, or abuse makes distance necessary.</p>
 <p>Wisdom requires us to recognize the difference.</p>
@@ -227,9 +259,9 @@
 <p>At the same time, protecting your heart does not require you to assume that everyone will hurt you. The goal is not to live suspicious of every person. The goal is to develop discernment, recognize trustworthy behavior, and establish boundaries appropriate to the circumstances.</p>
 <p>Where possible and safe, communicate boundaries clearly. Seek support from trustworthy people who respect your well being and do not pressure you to conceal harm. When abuse, threats, or immediate danger are involved, prioritize safety and seek appropriate professional or legal assistance.</p>
 <p><strong>Scripture references:</strong> Proverbs 4:23; Matthew 10:16; Romans 12:18; Proverbs 22:3.</p>
-<p><strong>Personal application:</strong> Identify the behaviors you need to address in a relationship. Decide what you can reasonably communicate, what changes would be necessary to rebuild trust, and what steps you will take if the behavior continues. Let your boundaries be guided by wisdom rather than revenge.</p></section>
+<p><strong>Personal application:</strong> Identify the behaviors you need to address in a relationship. Decide what you can reasonably communicate, what changes would be necessary to rebuild trust, and what steps you will take if the behavior continues. Let your boundaries be guided by wisdom rather than revenge.</p></div></details>
 
-<section><h2>5. Release Guilt That Does Not Belong to You</h2>
+<details class="weekly-reflection"><summary><span class="reflection-week">WEEK 05</span><span class="reflection-title">Release Guilt That Does Not Belong to You</span><span class="reflection-toggle">Reflect <span aria-hidden="true">＋</span></span></summary><div class="weekly-reflection-content">
 <p>Guilt can sometimes alert us to something that needs to be corrected. When we have done wrong, we should acknowledge it, repent, make amends where appropriate, and change our conduct.</p>
 <p>But not every feeling of guilt means that we have sinned.</p>
 <p>You may feel guilty for saying no. You may feel guilty because someone is disappointed with your decision. You may feel guilty for establishing a boundary, refusing an unreasonable demand, or declining to participate in a situation that violates your convictions.</p>
@@ -238,9 +270,9 @@
 <p>You are responsible for treating people with honesty, kindness, and fairness. You are not responsible for ensuring that every person approves of you. You can apologize when you have caused harm without accepting blame for things you did not do.</p>
 <p>Do not use grace as an excuse to avoid responsibility. But do not use guilt as a punishment you impose upon yourself long after you have honestly addressed your wrongdoing.</p>
 <p><strong>Scripture references:</strong> Romans 8:1; 2 Corinthians 7:10; Galatians 6:5; Colossians 3:15.</p>
-<p><strong>Personal application:</strong> When guilt arises, ask what it is pointing toward. Did you genuinely act wrongly? Is there something you need to repair? Or are you experiencing discomfort because someone does not agree with your boundary? Respond to the truth of the situation rather than allowing guilt alone to make the decision.</p></section>
+<p><strong>Personal application:</strong> When guilt arises, ask what it is pointing toward. Did you genuinely act wrongly? Is there something you need to repair? Or are you experiencing discomfort because someone does not agree with your boundary? Respond to the truth of the situation rather than allowing guilt alone to make the decision.</p></div></details>
 
-<section><h2>6. Allow God to Work in Your Own Heart</h2>
+<details class="weekly-reflection"><summary><span class="reflection-week">WEEK 06</span><span class="reflection-title">Allow God to Work in Your Own Heart</span><span class="reflection-toggle">Reflect <span aria-hidden="true">＋</span></span></summary><div class="weekly-reflection-content">
 <p>It is tempting to devote enormous energy to examining another person’s motives, interpreting their behavior, and trying to determine why they acted as they did.</p>
 <p>Sometimes understanding another person’s behavior can help us make wise decisions. However, we cannot know every hidden motive, and endless speculation rarely brings lasting peace.</p>
 <p>You are not required to solve another person’s heart before you can begin working on your own.</p>
@@ -248,18 +280,18 @@
 <p>This is not a call to ignore injustice or excuse harmful behavior. It is a call to keep your attention on the responsibilities you can actually fulfill.</p>
 <p>You can recognize wrongdoing without becoming consumed by it. You can pursue accountability without making another person’s repentance the condition of your own spiritual growth.</p>
 <p><strong>Scripture references:</strong> Psalm 139:23 to 24; Lamentations 3:40; Matthew 7:3 to 5; James 1:22 to 25.</p>
-<p><strong>Personal application:</strong> Set aside time for honest prayer and reflection. Instead of asking only what someone else needs to change, ask what God is showing you about your own decisions, reactions, boundaries, and next steps.</p></section>
+<p><strong>Personal application:</strong> Set aside time for honest prayer and reflection. Instead of asking only what someone else needs to change, ask what God is showing you about your own decisions, reactions, boundaries, and next steps.</p></div></details>
 
-<section><h2>7. Seek Help When the Burden Is Too Heavy</h2>
+<details class="weekly-reflection"><summary><span class="reflection-week">WEEK 07</span><span class="reflection-title">Seek Help When the Burden Is Too Heavy</span><span class="reflection-toggle">Reflect <span aria-hidden="true">＋</span></span></summary><div class="weekly-reflection-content">
 <p>Moving forward does not mean you must work through every struggle alone.</p>
 <p>There are times when trusted spiritual counsel, a qualified counselor, a support group, or appropriate professional assistance can help you process painful experiences and make responsible decisions.</p>
 <p>Choose support carefully. Look for people who listen without exploiting your vulnerability, respect appropriate confidentiality, recognize the seriousness of abuse, and encourage you to make informed decisions rather than demanding unquestioning loyalty.</p>
 <p>A trustworthy helper should not insist that you hide misconduct to protect an institution’s reputation. Nor should someone pressure you into reconciliation before there has been meaningful accountability or before it is safe to proceed.</p>
 <p>Seeking help is not a failure of faith. It can be a responsible step toward healing, clarity, and wise action.</p>
 <p><strong>Scripture references:</strong> Proverbs 11:14; Proverbs 15:22; Ecclesiastes 4:9 to 10.</p>
-<p><strong>Personal application:</strong> Identify one trustworthy person or appropriate resource you could approach if you need support. Consider what you need help with, what information is appropriate to share, and what outcome would help you move toward greater stability and clarity.</p></section>
+<p><strong>Personal application:</strong> Identify one trustworthy person or appropriate resource you could approach if you need support. Consider what you need help with, what information is appropriate to share, and what outcome would help you move toward greater stability and clarity.</p></div></details>
 
-<section><h2>8. Continue Beyond the Book</h2>
+<details class="weekly-reflection"><summary><span class="reflection-week">WEEK 08</span><span class="reflection-title">Continue Beyond the Book</span><span class="reflection-toggle">Reflect <span aria-hidden="true">＋</span></span></summary><div class="weekly-reflection-content">
 <p>The purpose of <em>Beyond the Veil</em> is not to leave you endlessly analyzing authority, replaying painful experiences, or questioning every relationship. It is to help you recognize truth, exercise discernment, accept responsibility, and live more faithfully before Jesus Christ.</p>
 <p>Take what you have learned and put it into practice.</p>
 <p>Let correction make you wiser. Let repentance lead to changed conduct. Let forgiveness free you from the obligation to retaliate. Let boundaries protect what needs protection. Let compassion remain part of your life without allowing it to consume your entire life.</p>
@@ -270,7 +302,9 @@
 <p>Move forward with humility. Protect your heart with wisdom. Speak with integrity. Refuse gossip. Accept responsibility for your own choices. Release the guilt that does not belong to you.</p>
 <p>You do not need to carry everything to prove that you care.</p>
 <p>Sometimes the most faithful thing you can do is help where help is needed, speak when truth must be spoken, establish a boundary when protection is necessary, and then allow yourself to continue living the life God has entrusted to you.</p>
-<p>You can love people without losing yourself in their struggles. You can protect your peace without abandoning compassion. You can move forward without denying the past. And you can leave what you cannot control in the hands of Jesus Christ.</p></section>
+<p>You can love people without losing yourself in their struggles. You can protect your peace without abandoning compassion. You can move forward without denying the past. And you can leave what you cannot control in the hands of Jesus Christ.</p></div></details>
+  </div>
+</section>
 
 <section class="syllabus-section resource-downloads" id="downloadable-materials">
   <div class="syllabus-hero resource-downloads-hero">
