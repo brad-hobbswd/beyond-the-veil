@@ -124,6 +124,23 @@
 .page-content a:focus-visible,.site-header a:focus-visible{outline:3px solid var(--gold);outline-offset:4px;border-radius:2px}
 @media(max-width:700px){.page-hero{padding:3.25rem 1.1rem}.page-content{padding:2rem 1rem 3.5rem}.page-content>section:not(.syllabus-section){margin:2.25rem 0;padding:1.1rem;border-radius:6px}.syllabus-section{margin:2.25rem 0;padding:12px;border-radius:7px}.syllabus-hero{grid-template-columns:minmax(0,1fr);align-items:start;gap:1.25rem;padding:1rem}.syllabus-hero>div{min-width:0;width:100%}.syllabus-hero img{width:min(100%,260px);max-height:320px;margin:0 auto}.syllabus-hero h2{font-size:clamp(1.8rem,7vw,2.25rem);line-height:1.15;overflow-wrap:normal;word-break:normal}.syllabus-hero p{font-size:1rem;line-height:1.7;overflow-wrap:break-word}.syllabus-lesson>summary{grid-template-columns:minmax(0,1fr) auto;gap:7px 12px;padding:15px}.syllabus-week-number{grid-column:1/-1;justify-self:start}.syllabus-lesson-title{font-size:1.04rem}.syllabus-toggle-label{font-size:.7rem;padding:6px 8px}.syllabus-lesson-content{padding:0 12px 12px}.syllabus-panel{padding:16px}.syllabus-panel p,.syllabus-panel li{font-size:1rem}}
 @media(prefers-reduced-motion:reduce){.syllabus-lesson{transition:none}}
+
+/* Downloadable materials */
+.resource-downloads{scroll-margin-top:24px}
+.resource-downloads-hero{margin-bottom:22px}
+.resource-download-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.resource-download-card{min-width:0;padding:24px;background:#fffdf9;border:1px solid #d9c28b;border-top:4px solid #5c201c;border-radius:7px;box-shadow:0 5px 16px rgba(36,27,24,.045)}
+.resource-download-card h3{margin:0 0 12px;color:#5c201c;font-size:1.4rem}
+.resource-download-card p{line-height:1.75}
+.resource-download-label{margin:0 0 9px;color:#8c6826;font:bold .72rem Arial,sans-serif;letter-spacing:.13em}
+.resource-placeholder-list{display:grid;gap:0;margin:20px 0;padding:0;list-style:none;border-top:1px solid #eadfc9}
+.resource-placeholder-list li{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:13px 0;border-bottom:1px solid #eadfc9;line-height:1.5}
+.resource-status{flex:0 0 auto;padding:4px 7px;background:#f5eddc;border:1px solid #e2d2b0;border-radius:3px;color:#805b20;font:bold .68rem Arial,sans-serif;white-space:nowrap}
+.resource-small-note{font-size:.9rem;color:#6a5c52}
+.resource-security-note{margin-top:18px;padding:18px 20px;background:#fff8e8;border-left:4px solid #b58b39;border-radius:3px;line-height:1.75}
+.resource-downloads .button{display:inline-block;margin-top:6px}
+@media(max-width:700px){.resource-download-grid{grid-template-columns:1fr}.resource-download-card{padding:19px}.resource-placeholder-list li{gap:8px}}
+
 </style>
 </head>
 <body>
@@ -255,6 +272,44 @@
 <p>You do not need to carry everything to prove that you care.</p>
 <p>Sometimes the most faithful thing you can do is help where help is needed, speak when truth must be spoken, establish a boundary when protection is necessary, and then allow yourself to continue living the life God has entrusted to you.</p>
 <p>You can love people without losing yourself in their struggles. You can protect your peace without abandoning compassion. You can move forward without denying the past. And you can leave what you cannot control in the hands of Jesus Christ.</p></section>
+
+<section class="syllabus-section resource-downloads" id="downloadable-materials">
+  <div class="syllabus-hero resource-downloads-hero">
+    <img src="C267842E-9D6F-4A46-88A5-1896BAC6A484.png" alt="Beyond the Veil book cover by Bradley Hobbs" loading="lazy">
+    <div>
+      <p class="eyebrow">CONTINUE THE STUDY</p>
+      <h2>Study Materials and Downloads</h2>
+      <p>Printable resources will be added here as they are prepared. Student materials will be available from this page, while instructor materials will be listed behind the instructor access screen.</p>
+    </div>
+  </div>
+  <div class="resource-download-grid">
+    <article class="resource-download-card">
+      <p class="resource-download-label">FOR PARTICIPANTS</p>
+      <h3>Student Resources</h3>
+      <p>Student handouts, the course syllabus, and other printable materials will appear here when uploaded.</p>
+      <ul class="resource-placeholder-list">
+        <li><span>Student Handouts</span><span class="resource-status">Coming soon</span></li>
+        <li><span>Student Syllabus</span><span class="resource-status">Coming soon</span></li>
+        <li><span>Personal Study Worksheets</span><span class="resource-status">Coming soon</span></li>
+      </ul>
+      <p class="resource-small-note">The links will be activated after the corresponding documents are added to the website.</p>
+    </article>
+    <article class="resource-download-card instructor-card">
+      <p class="resource-download-label">FOR STUDY LEADERS</p>
+      <h3>Instructor Resources</h3>
+      <p>Instructor guide, weekly answer key, and lesson plans will be made available here for leaders facilitating the study.</p>
+      <ul class="resource-placeholder-list">
+        <li><span>Instructor Guide</span><span class="resource-status">Coming soon</span></li>
+        <li><span>Weekly Answer Key</span><span class="resource-status">Coming soon</span></li>
+        <li><span>Eight Week Lesson Plans</span><span class="resource-status">Coming soon</span></li>
+      </ul>
+      <a class="button button-primary" href="instructor-access.html">Instructor Sign In</a>
+      <p class="resource-small-note">The instructor sign in page is set up now. The download links can be connected once the documents are uploaded.</p>
+    </article>
+  </div>
+  <p class="resource-security-note"><strong>About instructor access:</strong> The password screen hides the download links until the password is entered. Because this site is hosted on public GitHub Pages, this is not secure file protection. For genuinely restricted files, the documents must eventually be hosted in a service with access permissions.</p>
+</section>
+
 <p class="note">Scripture references are provided for personal study. Read each passage in context and seek trustworthy support when a situation requires more than personal reflection.</p>
 <p><a class="text-link" href="table-of-contents.html">Return to the Table of Contents</a></p>
 </article>
